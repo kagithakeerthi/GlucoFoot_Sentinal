@@ -1,0 +1,1 @@
+"""GlucoFoot Sentinel backend package."""
