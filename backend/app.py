@@ -61,7 +61,12 @@ def ensure_seed_user():
         db.session.add(admin)
         db.session.commit()
 
-
+@app.route("/")
+def home():
+    return jsonify({
+        "message": "GlucoFoot Sentinel API is Running",
+        "status": "success"
+    })
 @app.route("/api/health")
 def health():
     return jsonify({"status": "ok"})
